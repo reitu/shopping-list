@@ -1,0 +1,55 @@
+#labelname {
+    background-color: transparent;
+    color: whitesmoke;
+    margin: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 16px;
+    font-size: 20px;
+}
+
+#shoplistitems li {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.listpage {
+    font-size: 24px;
+    border: 5px yellow solid;
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: 0px 12px;
+    background-color: lavender;
+    font-weight: 200;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.itembox {
+    
+
+    border-radius: 4px;
+}
+
+#enterbox {
+
+    border-radius: 4px;
+
+}
+
+.btndeco {
+    padding: 12px 8px;
+}
+
+.controls {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-evenly;
+    border-top: 1px solid grey;
+
+
+
+}

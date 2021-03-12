@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="shoplist.css" rel="stylesheet">
+    <script src="shoplist.js" defer></script>
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <h1 id="labelname"> My Shopping List</h1>
+    <div class="listpage">
+        <div class="itembox">
+            <div class="btndeco">
+                <input type="text" placeholder="Enter item..." id="enterbox"> 
+            </div>
+            <div class="btndeco">
+                <button type="button" id="addbtn"> Add item </button>
+            </div>
+            <div>
+                <ol id="shoplistitems">
+
+                </ol>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="btndeco">
+                <button id="dltlst"> Delete last </button>
+            </div>
+            <div class="btndeco">
+                <button id="clrbtn">Clear all</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

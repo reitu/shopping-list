@@ -1,0 +1,72 @@
+
+
+var itemval = document.getElementById('enterbox').value 
+var displayval = document.getElementById('itemdisplay').value =''
+
+// var arrlist = [1,3,4,5]
+
+// itemval = '-'
+// displayval = 'l'
+
+var xund 
+
+console.log(itemval)
+console.log(displayval)
+
+//THIS WORKS BUT WAS CHECKING DOM LISTS
+// var arrlist = []
+// function addtoList () {
+//         if (itemval = document.getElementById('enterbox').value != undefined) {
+//                 console.log(itemval = document.getElementById('enterbox').value)
+//                 if (document.getElementById('enterbox').value != ""){
+//                         arrlist.push(document.getElementById('enterbox').value)
+//                         console.log(arrlist)
+//                         document.getElementById('itemdisplay').value = arrlist
+//                         var btnnn = document.createElement("BUTTON")
+//                         console.log(btnnn)
+//                 }        
+//                 document.getElementById('enterbox').value = ''
+//         }
+//         //console.log('honeys')
+// }
+
+//var arrlist = [] uncomment after try
+function addtoList () {
+        if (itemval = document.getElementById('enterbox').value != undefined) {
+                console.log(itemval = document.getElementById('enterbox').value)
+                if (document.getElementById('enterbox').value != ""){
+                        var reituno = document.createElement("li")
+                        var textnod = document.createTextNode(document.getElementById('enterbox').value)
+                        reituno.appendChild(textnod)
+                        document.getElementById("thangs").appendChild(reituno)
+                        var btnnew = document.createElement("button")
+                document.getElementById('enterbox').value = ''
+        }
+}
+}
+
+// function dltfrmList() {
+//       arrlist = arrlist.filter(item => 'salt')
+// }
+
+function clrallList () {
+        console.log(document.getElementById("thangs").lastChild.textContent)
+        document.getElementById('itemdisplay').value = ''
+        arrlist = []
+        document.getElementById('enterbox').value = ''
+        document.getElementById('thangs').textContent = ''
+
+}
+
+
+function dltlstList () {
+        var last = document.getElementById("thangs").lastChild
+        document.getElementById("thangs").removeChild(last);
+}
+
+
+document.getElementById("addbtn").onclick = addtoList
+document.getElementById("clrbtn").onclick = clrallList
+document.getElementById("dltlst").onclick = dltlstList
+
+
